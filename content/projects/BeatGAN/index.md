@@ -1,11 +1,24 @@
 ---
-title: "BeatGAN: Anomalous Rhythm Detection using Adversarially Generated Time Series."
+title: "BeatGAN: Anomalous Rhythm Detection using Adversarially Generated Time Series"
 date: 2019-08-10
+summary: "An unsupervised anomaly detection algorithm for time series data using adversarial generation, specifically designed for detecting anomalous patterns in rhythmic sequences like ECG readings."
 tags:
-  - Graph
+  - Time Series Analysis
+  - Anomaly Detection
+  - Generative Adversarial Networks
+  - Deep Learning
+image:
+  caption: "BeatGAN Anomaly Detection Framework"
+  focal_point: "Smart"
 links: 
- - name: git repository
+ - name: 📊 Code Repository
    url: "https://github.com/BGT-M/spartan2-tutorials/blob/master/BeatGAN.ipynb"
+   icon_pack: fas
+   icon: code
+ - name: 📄 Paper
+   url: "#"
+   icon_pack: fas
+   icon: file-pdf
 ---
 
 <!--more-->

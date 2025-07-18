@@ -1,11 +1,24 @@
 ---
 title: "HoloScope: Topology-and-Spike Aware Fraud Detection"
 date: 2017-11-07
+summary: "A holistic fraud detection system that leverages graph topology, temporal spikes, and rating deviations to accurately identify fraudulent user groups with sub-quadratic time complexity."
 tags:
-  - graph
+  - Graph Mining
+  - Fraud Detection
+  - Temporal Analysis
+  - Scalable Algorithms
+image:
+  caption: "HoloScope Fraud Detection Framework"
+  focal_point: "Smart"
 links: 
- - name: git repository
+ - name: 📊 GitHub Repository
    url: "https://github.com/shenghua-liu/HoloScope"
+   icon_pack: fab
+   icon: github
+ - name: 📄 Paper
+   url: "#"
+   icon_pack: fas
+   icon: file-pdf
 ---
 
 HoloScope is developped for fraud detection based on graphs, which makes holistic use of several signals, namely connectivity (i.e., topology), temporal bursts and drops, and rating deviation in a systematic way.

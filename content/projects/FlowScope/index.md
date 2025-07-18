@@ -1,11 +1,28 @@
 ---
 title: "FlowScope: Spotting Money Laundering Based on Graphs"
 date: 2020-04-03
+summary: "A scalable algorithm for detecting money laundering in financial networks using multipartite graph modeling to trace complete fund flows from source to destination accounts."
 tags:
-  - Graph
+  - Graph Mining
+  - Anomaly Detection
+  - Financial Fraud Detection
+  - Big Data Analytics
+image:
+  caption: "FlowScope Money Laundering Detection Pipeline"
+  focal_point: "Smart"
 links: 
- - name: git repository
+ - name: 📊 Code Repository
    url: "https://github.com/BGT-M/spartan2-tutorials/blob/master/FlowScope.ipynb"
+   icon_pack: fas
+   icon: code
+ - name: 📄 AAAI Paper
+   url: "#"
+   icon_pack: fas
+   icon: file-pdf
+ - name: 🎯 Demo
+   url: "#"
+   icon_pack: fas
+   icon: play-circle
 ---
 
 <!--more-->

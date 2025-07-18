@@ -1,5 +1,5 @@
 ---
-title: Accomplishments
+title: Honors & Awards
 
 date: 2022-10-24
 type: landing
@@ -7,7 +7,7 @@ type: landing
 sections:
   - block: accomplishments
     content:
-      title: 'Accomplishments'
+      title: 'Honors & Awards'
       id: accomplishments
       date_format: Jan 2006
       items:
@@ -15,24 +15,24 @@ sections:
         date_end: ''
         date_start: '2021-12-01'
         description: ''
-        organization: THU
+        organization: Tsinghua University
         organization_url: 
-        title: 进步奖
+        title: Excellence Award
       - certificate_url: 
         date_end: ''
         date_start: '2023-10-01'
         description: '' 
-        organization: THU
+        organization: Tsinghua University
         organization_url: 
-        title: 'Best paper'
+        title: 'Best Paper Award'
         url: ''
       - certificate_url: 
         date_end: ''
         date_start: '2022-02-01'
         description: '' 
-        organization: microsoft
-        organization_url: https://openi.org.cn/
-        title: 微软学者
+        organization: Microsoft Research Asia
+        organization_url: https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/
+        title: Microsoft Research Asia Fellowship
         url: ''
     design:
       columns: '1'
