@@ -11,7 +11,7 @@ date: '2018-01-01'
 publishDate: '2025-05-07T04:22:07.043353Z'
 publication_types:
 - article-journal
-publication: '*ACM Trans. Soc. Comput.*'
+publication: '*ACM Transactions on Social Computing, 2018, vol. 1, no. 2, pages 7*'
 doi: 10.1145/3216368
 links:
 - name: PDF

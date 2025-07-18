@@ -10,7 +10,7 @@ date: '2016-01-01'
 publishDate: '2025-05-07T04:22:07.153783Z'
 publication_types:
 - preprint
-publication: '*arXiv*'
+publication: '*CoRR, 2016, vol. abs/1608.03371*'
 links:
 - name: PDF
   url: http://arxiv.org/abs/1608.03371

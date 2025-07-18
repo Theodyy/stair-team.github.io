@@ -9,7 +9,7 @@ date: '2017-01-01'
 publishDate: '2025-05-07T04:22:07.114943Z'
 publication_types:
 - preprint
-publication: '*arXiv*'
+publication: '*CoRR, 2017, vol. abs/1701.03918*'
 links:
 - name: PDF
   url: http://arxiv.org/abs/1701.03918

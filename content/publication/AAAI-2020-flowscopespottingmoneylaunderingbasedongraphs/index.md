@@ -13,10 +13,7 @@ date: '2020-01-01'
 publishDate: '2025-05-07T04:22:06.940829Z'
 publication_types:
 - paper-conference
-publication: '*The Thirty-Fourth AAAI Conference on Artificial Intelligence, AAAI
-  2020, The Thirty-Second Innovative Applications of Artificial Intelligence Conference,
-  IAAI 2020, The Tenth AAAI Symposium on Educational Advances in Artificial Intelligence,
-  EAAI 2020, New York, NY, USA, February 7-12, 2020*'
+publication: '*Proc. of the Association for the Advancement of Artificial Intelligence, AAAI, 2020, pages 4731-4738*'
 doi: 10.1609/AAAI.V34I04.5906
 links:
 - name: PDF

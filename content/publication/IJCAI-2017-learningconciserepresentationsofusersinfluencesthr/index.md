@@ -10,8 +10,7 @@ date: '2017-01-01'
 publishDate: '2025-05-07T04:22:07.075332Z'
 publication_types:
 - paper-conference
-publication: '*Proceedings of the Twenty-Sixth International Joint Conference on Artificial
-  Intelligence, IJCAI 2017, Melbourne, Australia, August 19-25, 2017*'
+publication: '*Proc. of the International Joint Conference on Artificial Intelligence, IJCAI, 2017, pages 2351-2357*'
 doi: 10.24963/IJCAI.2017/327
 links:
 - name: PDF

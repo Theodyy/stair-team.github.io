@@ -9,8 +9,7 @@ date: '2024-01-01'
 publishDate: '2025-05-07T04:22:06.760586Z'
 publication_types:
 - paper-conference
-publication: '*Proceedings of the 2024 SIAM International Conference on Data Mining,
-  SDM 2024, Houston, TX, USA, April 18-20, 2024*'
+publication: '*Proc. of the SIAM International Conference on Data Mining, SDM, 2024, pages 271-279*'
 doi: 10.1137/1.9781611978032.31
 links:
 - name: PDF

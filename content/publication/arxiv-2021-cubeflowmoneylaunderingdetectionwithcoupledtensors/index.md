@@ -13,7 +13,7 @@ date: '2021-01-01'
 publishDate: '2025-05-07T04:22:06.934447Z'
 publication_types:
 - preprint
-publication: '*arXiv*'
+publication: '*CoRR, 2021, vol. abs/2103.12411*'
 links:
 - name: PDF
   url: https://arxiv.org/abs/2103.12411

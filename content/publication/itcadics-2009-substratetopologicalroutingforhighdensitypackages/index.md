@@ -12,7 +12,7 @@ date: '2009-01-01'
 publishDate: '2025-05-07T04:22:07.267907Z'
 publication_types:
 - article-journal
-publication: '*IEEE Trans. Comput. Aided Des. Integr. Circuits Syst.*'
+publication: '*IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, TCAD, 2009, vol. 28, no. 2, pages 207-216*'
 doi: 10.1109/TCAD.2008.2009154
 links:
 - name: PDF

@@ -12,7 +12,7 @@ date: '2023-01-01'
 publishDate: '2025-05-07T04:22:06.837813Z'
 publication_types:
 - article-journal
-publication: '*IEEE Trans. Knowl. Data Eng.*'
+publication: '*IEEE Transactions on Knowledge and Data Engineering, TKDE, 2023, vol. 35, no. 4, pages 4293-4306*'
 doi: 10.1109/TKDE.2021.3140058
 links:
 - name: PDF

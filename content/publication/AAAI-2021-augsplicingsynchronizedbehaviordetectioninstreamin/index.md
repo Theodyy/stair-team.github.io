@@ -12,10 +12,7 @@ date: '2021-01-01'
 publishDate: '2025-05-07T04:22:06.914852Z'
 publication_types:
 - paper-conference
-publication: '*Thirty-Fifth AAAI Conference on Artificial Intelligence, AAAI 2021,
-  Thirty-Third Conference on Innovative Applications of Artificial Intelligence, IAAI
-  2021, The Eleventh Symposium on Educational Advances in Artificial Intelligence,
-  EAAI 2021, Virtual Event, February 2-9, 2021*'
+publication: '*Proc. of the Association for the Advancement of Artificial Intelligence, AAAI, 2021, pages 4653-4661*'
 doi: 10.1609/AAAI.V35I5.16595
 links:
 - name: PDF

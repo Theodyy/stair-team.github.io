@@ -28,40 +28,35 @@ sections:
         </ur>
         <br>
         <br>
-        <i> We are actively recruiting highly-motivated Researchers and Ph.D./M.S. students to join our group at ICT, CAS! </i>
+        <i> We are actively recruiting highly-motivated Researchers and Ph.D./M.S./visiting students to join our group at ICT, CAS! </i>
         </div>
 
-  - block: markdown
+  - block: people
+    id: team
     content:
-      title:
-      subtitle:
-      text: |
-        <div style="text-align: center;">
-          <a href="./people/" class="btn btn-primary btn-lg" style="font-size: 1.3rem; padding: 30px 30px; border-radius: 8px;">Meet the team →</a>
-        </div>
+      title: Meet the Team
+      subtitle: Our research group members
+      # Choose which groups/teams of users to display.
+      #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
+      user_groups:
+          - Principal Investigator
+          - Researchers
+          - Students
+          - Administration
+          - Visitors
+          - Postdocs
+          - Alumni
+          - Partners
+      sort_by: Params.last_name
+      sort_ascending: false
     design:
-      columns: '1'
+      show_interests: true
+      show_role: true
+      show_social: true
       spacing:
-          padding: ["150px", "0px", "150px", "0px"]
-      columns: '2'
-  - block: markdown
-    content:
-      text:
-        |-
-        <div style="display: flex; justify-content: center; align-items: center;">
-          <img src="ucas.png" style="width: 10%; height: auto; margin: 0 5%;" alt="UCAS">
-          <img src="UCAS_.png" style="width: 30%; height: auto; margin: 0 5%;" alt="UCAS Long">
-          <img src="ict.png" style="width: 10%; height: auto; margin: 0 5%;" alt="ICT">
-        </div>
-    design:
-      columns: '1'
-      spacing:
-          padding: ["150px", "0px", "150px", "0px"]
-      background:
-        gradient_start: '#eef2f3'
-        gradient_end: '#f7f7f7'
-        gradient_angle: 180
-        text_color_light: true
+          padding: ["60px", "0px", "60px", "0px"]
+
+---
 
 # The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
 

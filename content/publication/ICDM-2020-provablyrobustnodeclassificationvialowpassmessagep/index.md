@@ -12,8 +12,7 @@ date: '2020-01-01'
 publishDate: '2025-05-07T04:22:06.947425Z'
 publication_types:
 - paper-conference
-publication: '*20th IEEE International Conference on Data Mining, ICDM 2020, Sorrento,
-  Italy, November 17-20, 2020*'
+publication: '*IEEE International Conference on Data Mining (ICDM), 2020, pages 621-630*'
 doi: 10.1109/ICDM50108.2020.00071
 links:
 - name: PDF

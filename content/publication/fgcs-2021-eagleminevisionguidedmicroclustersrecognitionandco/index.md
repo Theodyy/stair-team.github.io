@@ -12,7 +12,7 @@ date: '2021-01-01'
 publishDate: '2025-05-07T04:22:06.901989Z'
 publication_types:
 - article-journal
-publication: '*Future Gener. Comput. Syst.*'
+publication: '*Future Generation Computer Systems, 2021, vol. 115, pages 236-250*'
 doi: 10.1016/J.FUTURE.2020.08.033
 links:
 - name: PDF

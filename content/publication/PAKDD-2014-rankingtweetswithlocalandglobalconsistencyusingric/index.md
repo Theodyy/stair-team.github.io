@@ -9,8 +9,7 @@ date: '2014-01-01'
 publishDate: '2025-05-07T04:22:07.185262Z'
 publication_types:
 - paper-conference
-publication: '*Advances in Knowledge Discovery and Data Mining - 18th Pacific-Asia
-  Conference, PAKDD 2014, Tainan, Taiwan, May 13-16, 2014. Proceedings, Part I*'
+publication: '*Proc. of the Pacific-Asia Conference on Knowledge Discovery and Data Mining, PAKDD, 2014, pages 298-309*'
 doi: 10.1007/978-3-319-06608-0_25
 links:
 - name: PDF

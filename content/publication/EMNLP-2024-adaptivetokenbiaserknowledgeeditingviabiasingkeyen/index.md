@@ -12,8 +12,7 @@ date: '2024-01-01'
 publishDate: '2025-05-07T04:22:06.747806Z'
 publication_types:
 - paper-conference
-publication: '*Findings of the Association for Computational Linguistics: EMNLP 2024,
-  Miami, Florida, USA, November 12-16, 2024*'
+publication: '*Proc. of the Empirical Methods in Natural Language Processing, EMNLP Findings, 2024, pages 11071-11083*'
 links:
 - name: PDF
   url: https://aclanthology.org/2024.findings-emnlp.647

@@ -13,8 +13,7 @@ date: '2021-01-01'
 publishDate: '2025-05-07T04:22:06.921378Z'
 publication_types:
 - paper-conference
-publication: '*Advances in Knowledge Discovery and Data Mining - 25th Pacific-Asia
-  Conference, PAKDD 2021, Virtual Event, May 11-14, 2021, Proceedings, Part I*'
+publication: '*Proc. of the Pacific-Asia Conference on Knowledge Discovery and Data Mining, PAKDD, 2021, pages 78-90*'
 doi: 10.1007/978-3-030-75762-5_7
 links:
 - name: PDF

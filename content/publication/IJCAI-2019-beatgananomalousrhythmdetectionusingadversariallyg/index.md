@@ -10,8 +10,7 @@ date: '2019-01-01'
 publishDate: '2025-05-07T04:22:07.011251Z'
 publication_types:
 - paper-conference
-publication: '*Proceedings of the Twenty-Eighth International Joint Conference on
-  Artificial Intelligence, IJCAI 2019, Macao, China, August 10-16, 2019*'
+publication: '*Proc. of the International Joint Conference on Artificial Intelligence, IJCAI, 2019, pages 4433-4439*'
 doi: 10.24963/IJCAI.2019/616
 links:
 - name: PDF

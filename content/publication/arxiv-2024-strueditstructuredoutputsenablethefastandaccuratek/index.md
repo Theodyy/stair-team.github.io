@@ -13,7 +13,7 @@ date: '2024-01-01'
 publishDate: '2025-05-07T04:22:06.805511Z'
 publication_types:
 - preprint
-publication: '*arXiv*'
+publication: '*CoRR, 2024, vol. abs/2409.10132*'
 doi: 10.48550/ARXIV.2409.10132
 links:
 - name: PDF

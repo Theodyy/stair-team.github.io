@@ -12,8 +12,7 @@ date: '2013-01-01'
 publishDate: '2025-05-07T04:22:07.217151Z'
 publication_types:
 - paper-conference
-publication: "*22nd International World Wide Web Conference, WWW '13, Rio de Janeiro,
-  Brazil, May 13-17, 2013, Companion Volume*"
+publication: "*Proc. of the International World Wide Web Conference, WWW Companion, 2013, pages 105-106*"
 doi: 10.1145/2487788.2487836
 links:
 - name: PDF

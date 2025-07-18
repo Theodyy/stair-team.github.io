@@ -4,3 +4,132 @@
   font-weight: 400;
   src: local('EB Garamond'), url('fonts/EBGaramond-Regular.ttf');
 }
+
+/* 平滑滚动效果 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 精简页眉样式 */
+.navbar {
+  padding: 0.5rem 0 !important;  /* 减小上下内边距 */
+  min-height: 60px !important;   /* 设置最小高度 */
+}
+
+.navbar-nav {
+  margin: 0 !important;
+}
+
+.navbar-brand {
+  font-size: 1.3rem !important;  /* 减小网站标题字体 */
+  padding: 0.3rem 0 !important;  /* 减小标题内边距 */
+  margin-right: 1.5rem !important;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.4rem 0.8rem !important;  /* 减小导航链接内边距 */
+  font-size: 0.95rem !important;      /* 稍微减小导航链接字体 */
+}
+
+.navbar-toggler {
+  padding: 0.2rem 0.4rem !important;  /* 减小移动端菜单按钮内边距 */
+}
+
+/* 调整搜索框和主题切换按钮 */
+.navbar .btn {
+  padding: 0.3rem 0.6rem !important;
+  font-size: 0.9rem !important;
+}
+
+/* 移动端优化 */
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    font-size: 1.2rem !important;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.3rem 0 !important;
+  }
+}
+
+/* 精简页眉样式 */
+.navbar {
+  padding: 0.5rem 0 !important;  /* 减小上下内边距 */
+  min-height: 60px !important;   /* 设置最小高度 */
+}
+
+.navbar-nav {
+  margin: 0 !important;
+}
+
+.navbar-brand {
+  font-size: 1.3rem !important;  /* 减小网站标题字体 */
+  padding: 0.3rem 0 !important;  /* 减小标题内边距 */
+  margin-right: 1.5rem !important;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.4rem 0.8rem !important;  /* 减小导航链接内边距 */
+  font-size: 0.95rem !important;      /* 稍微减小导航链接字体 */
+}
+
+.navbar-toggler {
+  padding: 0.2rem 0.4rem !important;  /* 减小移动端菜单按钮内边距 */
+}
+
+/* 调整搜索框和主题切换按钮 */
+.navbar .btn {
+  padding: 0.3rem 0.6rem !important;
+  font-size: 0.9rem !important;
+}
+
+/* 移动端优化 */
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    font-size: 1.2rem !important;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.3rem 0 !important;
+  }
+}
+
+/* 优化团队链接样式 */
+a[href="#team"] {
+  transition: all 0.3s ease;
+}
+
+a[href="#team"]:hover {
+  color: #495057 !important;
+  border-bottom-color: #495057 !important;
+  transform: translateY(-1px);
+}
+
+/* Footer机构标识样式 */
+.footer-institutions {
+  border-top: 1px solid #e1e5e9;
+  padding-top: 20px;
+}
+
+.footer-institutions img {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  filter: grayscale(20%);
+}
+
+.footer-institutions img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* 移动端响应式 */
+@media (max-width: 768px) {
+  .footer-institutions div {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+  
+  .footer-institutions img {
+    height: 30px !important;
+  }
+}

@@ -1,5 +1,5 @@
 ---
-title: "\\\"Not Aligned\\\" is Not \\\"Malicious\\\": Being Careful about Hallucinations
+title: "\"Not Aligned\" is Not \"Malicious\": Being Careful about Hallucinations
   of Large Language Models' Jailbreak"
 authors:
 - Lingrui Mei
@@ -12,7 +12,7 @@ date: '2024-01-01'
 publishDate: '2025-05-07T04:22:06.792702Z'
 publication_types:
 - preprint
-publication: '*arXiv*'
+publication: '*CoRR, 2024, vol. abs/2406.11668*'
 doi: 10.48550/ARXIV.2406.11668
 links:
 - name: PDF

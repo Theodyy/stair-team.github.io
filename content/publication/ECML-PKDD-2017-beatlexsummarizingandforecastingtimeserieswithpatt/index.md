@@ -9,8 +9,7 @@ date: '2017-01-01'
 publishDate: '2025-05-07T04:22:07.108336Z'
 publication_types:
 - paper-conference
-publication: '*Machine Learning and Knowledge Discovery in Databases - European Conference,
-  ECML PKDD 2017, Skopje, Macedonia, September 18-22, 2017, Proceedings, Part II*'
+publication: '*Proc. of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases, ECML-PKDD, 2017, pages 3-19*'
 doi: 10.1007/978-3-319-71246-8_1
 links:
 - name: PDF

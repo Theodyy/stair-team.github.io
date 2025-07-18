@@ -13,7 +13,7 @@ date: '2025-01-01'
 publishDate: '2025-05-07T04:44:55.883285Z'
 publication_types:
 - preprint
-publication: '*arXiv*'
+publication: '*arXiv preprint arXiv:2504.14597, 2025*'
 links:
 - name: PDF
   url:  https://arxiv.org/abs/2504.14597

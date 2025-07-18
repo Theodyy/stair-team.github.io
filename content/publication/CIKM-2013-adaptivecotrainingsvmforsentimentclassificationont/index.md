@@ -10,8 +10,7 @@ date: '2013-01-01'
 publishDate: '2025-05-07T04:22:07.191776Z'
 publication_types:
 - paper-conference
-publication: "*22nd ACM International Conference on Information and Knowledge Management,
-  CIKM'13, San Francisco, CA, USA, October 27 - November 1, 2013*"
+publication: "*Proc. of the ACM International Conference on Information and Knowledge Management, CIKM, 2013, pages 2079-2088*"
 doi: 10.1145/2505515.2505569
 links:
 - name: PDF

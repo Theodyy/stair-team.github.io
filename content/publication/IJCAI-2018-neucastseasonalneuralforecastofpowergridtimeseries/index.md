@@ -11,8 +11,7 @@ date: '2018-01-01'
 publishDate: '2025-05-07T04:22:07.049917Z'
 publication_types:
 - paper-conference
-publication: '*Proceedings of the Twenty-Seventh International Joint Conference on
-  Artificial Intelligence, IJCAI 2018, July 13-19, 2018, Stockholm, Sweden*'
+publication: '*Proc. of the International Joint Conference on Artificial Intelligence, IJCAI, 2018, pages 3315-3321*'
 doi: 10.24963/IJCAI.2018/460
 links:
 - name: PDF

@@ -11,8 +11,7 @@ date: '2013-01-01'
 publishDate: '2025-05-07T04:22:07.198178Z'
 publication_types:
 - paper-conference
-publication: '*Proceedings of the 13th SIAM International Conference on Data Mining,
-  May 2-4, 2013. Austin, Texas, USA*'
+publication: '*Proc. of the SIAM International Conference on Data Mining, SDM, 2013, pages 749-757*'
 doi: 10.1137/1.9781611972832.83
 links:
 - name: PDF

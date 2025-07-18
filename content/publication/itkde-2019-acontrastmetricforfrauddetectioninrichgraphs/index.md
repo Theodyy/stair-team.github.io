@@ -8,7 +8,7 @@ date: '2019-01-01'
 publishDate: '2025-05-07T04:22:06.998630Z'
 publication_types:
 - article-journal
-publication: '*IEEE Trans. Knowl. Data Eng.*'
+publication: '*IEEE Transactions on Knowledge and Data Engineering, TKDE, 2019, vol. 31, no. 12, pages 2235-2248*'
 doi: 10.1109/TKDE.2018.2876531
 links:
 - name: PDF

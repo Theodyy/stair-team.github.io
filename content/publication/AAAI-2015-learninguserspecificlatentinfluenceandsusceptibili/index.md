@@ -10,8 +10,7 @@ date: '2015-01-01'
 publishDate: '2025-05-07T04:22:07.166357Z'
 publication_types:
 - paper-conference
-publication: '*Proceedings of the Twenty-Ninth AAAI Conference on Artificial Intelligence,
-  January 25-30, 2015, Austin, Texas, USA*'
+publication: '*Proc. of the Association for the Advancement of Artificial Intelligence, AAAI, 2015, pages 477-483*'
 doi: 10.1609/AAAI.V29I1.9213
 links:
 - name: PDF

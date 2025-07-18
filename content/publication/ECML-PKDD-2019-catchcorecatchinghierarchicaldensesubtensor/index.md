@@ -8,8 +8,7 @@ date: '2019-01-01'
 publishDate: '2025-05-07T04:22:07.030424Z'
 publication_types:
 - paper-conference
-publication: '*Machine Learning and Knowledge Discovery in Databases - European Conference,
-  ECML PKDD 2019, Würzburg, Germany, September 16-20, 2019, Proceedings, Part I*'
+publication: '*Proc. of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases, ECML-PKDD, 2019, pages 156-172*'
 doi: 10.1007/978-3-030-46150-8_10
 links:
 - name: PDF
