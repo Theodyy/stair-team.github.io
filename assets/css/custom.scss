@@ -5,6 +5,32 @@
   src: local('EB Garamond'), url('fonts/EBGaramond-Regular.ttf');
 }
 
+/*
+🎯 ========== 标题字体大小快速调整指南 ==========
+
+想要调整网站标题字体大小？在下面找到对应的屏幕尺寸，修改字体大小数值即可：
+
+📱 不同屏幕对应的字体大小设置位置：
+┌─────────────────────────────────────────────────────────┐
+│ 🖥️  桌面端 (>1200px)     → 第22行: font-size: 1.5rem     │
+│ 💻  平板端 (992-1200px)  → 第41行: font-size: 1.3rem     │
+│ 📱  移动端 (576-992px)   → 第49行: font-size: 1.1rem     │
+│ 📱  小手机 (360-576px)   → 第65行: font-size: 0.95rem    │
+│ 📱  超小屏 (480px以下)   → 第76行: font-size: 0.85rem    │
+│ 📱  极小屏 (360px以下)   → 第95行: font-size: 0.8rem     │
+└─────────────────────────────────────────────────────────┘
+
+💡 调整建议：
+• 字体大小单位：推荐使用 rem (如：1.2rem, 1.5rem)
+• 递减原则：桌面端 > 平板端 > 移动端 > 小屏幕
+• 测试方法：保存后刷新浏览器，调整窗口大小查看效果
+
+🔧 快速模板：
+• 偏大字体：桌面1.8rem → 平板1.5rem → 移动1.3rem → 小屏1.0rem
+• 标准字体：桌面1.5rem → 平板1.3rem → 移动1.1rem → 小屏0.9rem
+• 偏小字体：桌面1.2rem → 平板1.0rem → 移动0.9rem → 小屏0.8rem
+*/
+
 /* 平滑滚动效果 */
 html {
   scroll-behavior: smooth;
@@ -20,10 +46,15 @@ html {
   margin: 0 !important;
 }
 
+/* ========== 标题字体大小控制区域 ========== */
+/* 您可以在这里轻松调整不同屏幕下的标题字体大小 */
+
 .navbar-brand {
-  font-size: 1.3rem !important;  /* 减小网站标题字体 */
-  padding: 0.3rem 0 !important;  /* 减小标题内边距 */
+  font-size: 1.5rem !important;  /* 🎯 桌面端标题字体大小 - 可调整 */
+  padding: 0.3rem 0 !important;
   margin-right: 1.5rem !important;
+  font-weight: 500 !important; /* 增加字体粗细 */
+  transition: font-size 0.3s ease !important; /* 平滑过渡效果 */
 }
 
 .navbar-nav .nav-link {
@@ -41,16 +72,24 @@ html {
   font-size: 0.9rem !important;
 }
 
-/* 移动端优化 - 解决标题与汉堡菜单重叠问题 */
+/* ========== 响应式字体大小设置 ========== */
+/* 🎯 平板端 - 中等屏幕 */
+@media (max-width: 1199.98px) {
+  .navbar-brand {
+    font-size: 1.3rem !important; /* 🎯 平板端字体大小 - 可调整 */
+  }
+}
+
+/* 🎯 移动端 - 小屏幕 */
 @media (max-width: 991.98px) {
   .navbar-brand {
-    font-size: 0.9rem !important; /* 大幅减小移动端标题字体 */
+    font-size: 1.1rem !important; /* 🎯 移动端字体大小 - 可调整 */
     padding: 0.2rem 0 !important;
-    margin-right: 0.5rem !important; /* 减小右边距给汉堡菜单留空间 */
-    max-width: calc(100vw - 120px) !important; /* 限制标题最大宽度，为右侧按钮留空间 */
+    margin-right: 0.5rem !important;
+    max-width: calc(100vw - 120px) !important;
     white-space: nowrap !important;
     overflow: hidden !important;
-    text-overflow: ellipsis !important; /* 超长文字显示省略号 */
+    text-overflow: ellipsis !important;
   }
   
   .navbar-nav .nav-link {
@@ -60,7 +99,7 @@ html {
   /* 确保汉堡菜单和其他按钮有足够空间 */
   .navbar-toggler {
     margin-left: auto !important;
-    flex-shrink: 0 !important; /* 防止汉堡菜单被压缩 */
+    flex-shrink: 0 !important;
   }
   
   .navbar .navbar-nav {
@@ -68,31 +107,31 @@ html {
   }
 }
 
-/* 超小屏幕进一步优化 */
+/* 🎯 小手机屏幕 */
 @media (max-width: 576px) {
   .navbar-brand {
-    font-size: 0.8rem !important; /* 超小屏幕进一步减小字体 */
-    max-width: calc(100vw - 100px) !important; /* 为右侧按钮留更多空间 */
+    font-size: 0.95rem !important; /* 🎯 小手机字体大小 - 可调整 */
+    max-width: calc(100vw - 100px) !important;
   }
   
   .navbar {
-    padding: 0.3rem 0 !important; /* 减小导航栏高度 */
+    padding: 0.3rem 0 !important;
     min-height: 50px !important;
   }
 }
 
-/* 特别小的屏幕显示简化标题，避免与汉堡菜单重叠 */
+/* 🎯 超小手机屏幕 - 显示简化标题 */
 @media (max-width: 480px) {
   .navbar-brand {
-    font-size: 0.75rem !important;
+    font-size: 0.85rem !important; /* 🎯 超小手机字体大小 - 可调整 */
     max-width: calc(100vw - 80px) !important;
-    text-indent: -9999px !important; /* 隐藏原标题 */
+    text-indent: -9999px !important; /* 隐藏原长标题 */
     position: relative !important;
   }
   
-  /* 在小屏幕上显示简化的标题 */
+  /* 在超小屏幕上显示简化的标题 */
   .navbar-brand::before {
-    content: "STAIR Research Group" !important; /* 简化标题 */
+    content: "STAIR Research Group" !important; /* 🎯 简化标题内容 - 可修改 */
     text-indent: 0 !important;
     position: absolute !important;
     left: 0 !important;
@@ -102,13 +141,18 @@ html {
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     width: 100% !important;
+    font-size: inherit !important;
   }
 }
 
-/* 极小屏幕进一步简化 */
+/* 🎯 极小屏幕 - 最短标题 */
 @media (max-width: 360px) {
+  .navbar-brand {
+    font-size: 0.8rem !important; /* 🎯 极小屏幕字体大小 - 可调整 */
+  }
+  
   .navbar-brand::before {
-    content: "STAIR Group" !important; /* 更短的标题 */
+    content: "STAIR Group" !important; /* 🎯 最短标题 - 可修改 */
   }
 }
 
