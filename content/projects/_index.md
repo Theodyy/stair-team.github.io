@@ -37,8 +37,8 @@ sections:
       offset: 0
       order: desc
     design:
-      view: masonry
-      columns: 3
+      view: masonry  # 砖石布局
+      columns: 3     # 列数设置
       spacing:
         padding: ["20px", "0px", "40px", "0px"]
       background:

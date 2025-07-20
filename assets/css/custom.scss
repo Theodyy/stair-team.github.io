@@ -41,56 +41,74 @@ html {
   font-size: 0.9rem !important;
 }
 
-/* 移动端优化 */
+/* 移动端优化 - 解决标题与汉堡菜单重叠问题 */
 @media (max-width: 991.98px) {
   .navbar-brand {
-    font-size: 1.2rem !important;
+    font-size: 0.9rem !important; /* 大幅减小移动端标题字体 */
+    padding: 0.2rem 0 !important;
+    margin-right: 0.5rem !important; /* 减小右边距给汉堡菜单留空间 */
+    max-width: calc(100vw - 120px) !important; /* 限制标题最大宽度，为右侧按钮留空间 */
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important; /* 超长文字显示省略号 */
   }
   
   .navbar-nav .nav-link {
     padding: 0.3rem 0 !important;
   }
-}
-
-/* 精简页眉样式 */
-.navbar {
-  padding: 0.5rem 0 !important;  /* 减小上下内边距 */
-  min-height: 60px !important;   /* 设置最小高度 */
-}
-
-.navbar-nav {
-  margin: 0 !important;
-}
-
-.navbar-brand {
-  font-size: 1.3rem !important;  /* 减小网站标题字体 */
-  padding: 0.3rem 0 !important;  /* 减小标题内边距 */
-  margin-right: 1.5rem !important;
-}
-
-.navbar-nav .nav-link {
-  padding: 0.4rem 0.8rem !important;  /* 减小导航链接内边距 */
-  font-size: 0.95rem !important;      /* 稍微减小导航链接字体 */
-}
-
-.navbar-toggler {
-  padding: 0.2rem 0.4rem !important;  /* 减小移动端菜单按钮内边距 */
-}
-
-/* 调整搜索框和主题切换按钮 */
-.navbar .btn {
-  padding: 0.3rem 0.6rem !important;
-  font-size: 0.9rem !important;
-}
-
-/* 移动端优化 */
-@media (max-width: 991.98px) {
-  .navbar-brand {
-    font-size: 1.2rem !important;
+  
+  /* 确保汉堡菜单和其他按钮有足够空间 */
+  .navbar-toggler {
+    margin-left: auto !important;
+    flex-shrink: 0 !important; /* 防止汉堡菜单被压缩 */
   }
   
-  .navbar-nav .nav-link {
-    padding: 0.3rem 0 !important;
+  .navbar .navbar-nav {
+    margin-left: auto !important;
+  }
+}
+
+/* 超小屏幕进一步优化 */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 0.8rem !important; /* 超小屏幕进一步减小字体 */
+    max-width: calc(100vw - 100px) !important; /* 为右侧按钮留更多空间 */
+  }
+  
+  .navbar {
+    padding: 0.3rem 0 !important; /* 减小导航栏高度 */
+    min-height: 50px !important;
+  }
+}
+
+/* 特别小的屏幕显示简化标题，避免与汉堡菜单重叠 */
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 0.75rem !important;
+    max-width: calc(100vw - 80px) !important;
+    text-indent: -9999px !important; /* 隐藏原标题 */
+    position: relative !important;
+  }
+  
+  /* 在小屏幕上显示简化的标题 */
+  .navbar-brand::before {
+    content: "STAIR Research Group" !important; /* 简化标题 */
+    text-indent: 0 !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    width: 100% !important;
+  }
+}
+
+/* 极小屏幕进一步简化 */
+@media (max-width: 360px) {
+  .navbar-brand::before {
+    content: "STAIR Group" !important; /* 更短的标题 */
   }
 }
 
@@ -294,87 +312,169 @@ a[href="#team"]:hover {
 
 /* Professional Masonry Layout Optimization for Research Projects */
 
-/* Project cards styling for academic presentation */
+/* 强制控制项目页面容器宽度 - 让整个项目列表变窄 */
+.home-section .container-xl,
+.home-section .container {
+  max-width: 800px !important; /* 限制整体容器最大宽度 */
+  padding: 0 1rem !important;
+}
+
+/* Force narrow grid layout for masonry view - 让项目卡片变窄 */
+.home-section [data-view="masonry"] .row,
+[data-view="masonry"] .row {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important; /* 大幅减小卡片最小宽度 */
+  gap: 1rem !important; /* 紧凑间距 */
+  margin: 0 !important;
+  max-width: 700px !important; /* 限制网格容器最大宽度 */
+  margin: 0 auto !important; /* 居中显示 */
+}
+
+/* Project cards styling - 专注于窄卡片设计 */
 [data-view="masonry"] .stream-item {
-  /* Card dimensions - optimized for academic content display */
-  width: 100%;
-  max-width: 360px; /* Maximum card width for readability */
-  min-width: 228px; /* Minimum card width for content preservation */
+  /* Card dimensions - 让卡片变得更窄更紧凑 */
+  width: 100% !important;
+  max-width: 240px !important; /* 大幅减小最大宽度 */
+  min-width: 200px !important; /* 减小最小宽度 */
   
-  /* Professional spacing and layout */
-  padding: 1rem;
+  /* Compact spacing */
+  padding: 0.8rem !important; /* 减小内边距 */
+  margin-bottom: 0 !important;
   
   /* Vertical layout, image on top */
-  flex-direction: column;
-  display: flex;
+  flex-direction: column !important;
+  display: flex !important;
+  
+  /* Simplified card styling */
+  background: #ffffff !important;
+  border-radius: 6px !important; /* 减小圆角 */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) !important; /* 减小阴影 */
+  transition: all 0.3s ease !important;
+  border: 1px solid #e1e5e9 !important;
+}
+
+[data-view="masonry"] .stream-item:hover {
+  transform: translateY(-2px) !important; /* 减小悬停效果 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important; /* 减小阴影 */
 }
 
 [data-view="masonry"] .stream-item .media-body {
-  order: 2;
-  width: 100%;
+  order: 2 !important;
+  width: 100% !important;
 }
 
 [data-view="masonry"] .stream-item .ml-3 {
-  order: 1;
+  order: 1 !important;
   margin-left: 0 !important;
-  margin-bottom: 1rem;
-  width: 100%;
-  min-width: auto;
-  max-width: 100%;
+  margin-bottom: 0.6rem !important; /* 减小图片下方间距 */
+  width: 100% !important;
+  min-width: auto !important;
+  max-width: 100% !important;
 }
 
-/* Masonry view image styles */
+/* Masonry view image styles - 紧凑化设计 */
 [data-view="masonry"] .stream-item .ml-3 img {
   width: 100% !important;
-  height: 200px !important; /* Fixed image height, adjustable */
-  object-fit: cover; /* Maintain image aspect ratio, crop excess */
-  border-radius: 8px;
+  height: 140px !important; /* 大幅减小图片高度让卡片更紧凑 */
+  object-fit: cover !important; 
+  border-radius: 4px !important; /* 减小圆角 */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08) !important; /* 减小阴影 */
 }
 
-/* Masonry view title styles */
+/* Masonry view title styles - 紧凑化字体 */
 [data-view="masonry"] .stream-item .article-title {
-  font-size: 1.1rem !important;
-  margin-bottom: 0.5rem !important;
+  font-size: 0.95rem !important; /* 减小标题字体 */
+  margin-bottom: 0.4rem !important; /* 减小下方间距 */
+  font-weight: 600 !important;
+  line-height: 1.3 !important; /* 减小行高 */
+  color: #2c3e50 !important;
 }
 
-/* Masonry view metadata styles */
+/* Masonry view metadata styles - 紧凑化元数据 */
 [data-view="masonry"] .stream-item .article-metadata {
-  font-size: 0.8rem;
-  margin-bottom: 0.75rem;
+  font-size: 0.75rem !important; /* 减小元数据字体 */
+  margin-bottom: 0.5rem !important; /* 减小下方间距 */
+  color: #6c757d !important;
 }
 
-/* Masonry view summary styles */
+/* Masonry view summary styles - 紧凑化摘要 */
 [data-view="masonry"] .stream-item .article-style {
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.8rem !important; /* 减小摘要字体 */
+  line-height: 1.4 !important; /* 减小行高 */
+  color: #495057 !important;
+  margin-bottom: 0.5rem !important; /* 减小下方间距 */
 }
 
-/* Grid layout optimization */
+/* Remove default isotope behavior */
 [data-view="masonry"] .isotope {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
-  gap: 1.5rem;
-  align-items: start;
+  display: contents !important;
 }
 
-/* Responsive breakpoints */
+/* Responsive breakpoints - 保持紧凑设计 */
 @media (max-width: 768px) {
+  .home-section .container-xl,
+  .home-section .container {
+    max-width: 100% !important;
+    padding: 0 0.5rem !important;
+  }
+  
+  .home-section [data-view="masonry"] .row,
+  [data-view="masonry"] .row {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important; /* 移动端也保持多列 */
+    gap: 0.8rem !important;
+    max-width: 100% !important;
+  }
+  
   [data-view="masonry"] .stream-item {
-    max-width: 100%;
-    min-width: 192px;
+    max-width: 100% !important;
+    min-width: 180px !important;
+    padding: 0.6rem !important; /* 减小移动端内边距 */
   }
   
   [data-view="masonry"] .stream-item .ml-3 img {
-    height: 180px !important;
+    height: 120px !important; /* 移动端进一步减小图片高度 */
   }
-  
-  [data-view="masonry"] .isotope {
-    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-section [data-view="masonry"] .row,
+  [data-view="masonry"] .row {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important; /* 平板保持紧凑 */
+    max-width: 800px !important;
   }
 }
 
 @media (min-width: 1200px) {
-  [data-view="masonry"] .stream-item {
-    max-width: 348px;
+  .home-section [data-view="masonry"] .row,
+  [data-view="masonry"] .row {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)) !important; /* 大屏幕也保持紧凑 */
+    max-width: 900px !important;
   }
+  
+  [data-view="masonry"] .stream-item {
+    max-width: 280px !important; /* 限制大屏幕下的最大宽度 */
+  }
+}
+
+/* Dark theme support - 紧凑化暗色主题 */
+.dark [data-view="masonry"] .stream-item {
+  background: #1a1a1a !important;
+  border-color: #333 !important;
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.05) !important; /* 减小阴影 */
+}
+
+.dark [data-view="masonry"] .stream-item:hover {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08) !important; /* 减小悬停阴影 */
+}
+
+.dark [data-view="masonry"] .stream-item .article-title {
+  color: #ffffff !important;
+}
+
+.dark [data-view="masonry"] .stream-item .article-metadata {
+  color: #adb5bd !important;
+}
+
+.dark [data-view="masonry"] .stream-item .article-style {
+  color: #e9ecef !important;
 }
